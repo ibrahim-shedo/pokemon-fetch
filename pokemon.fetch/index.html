@@ -4,62 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon App</title>
-    <style>
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container {
-    text-align: center;
-}
-
-input[type="text"] {
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-    height: 35px; 
-}
-
-button {
-    margin-left: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    height: 40px; 
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-img {
-    max-width: 200px;
-    height: auto;
-    margin-top: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-}
-
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <input type="text" id="pokemonNames" placeholder="Enter Pokemon Name">
-    <button onclick="fetchData()">Fetch Pokemon</button><br>
-    <img id="pokemonSprite" style="display: none;">
+<body class="bg-gray-100 flex justify-center items-center h-screen">
+    <div class="container text-center">
+        <input type="text" id="pokemonNames" placeholder="Enter Pokemon Name" class="p-2 text-lg rounded border border-gray-300 mb-4">
+        <button onclick="fetchData()" class="px-4 py-2 text-lg rounded bg-green-500 text-white hover:bg-green-600 transition duration-300 ease-in-out">Fetch Pokemon</button><br>
+        <img id="pokemonSprite" style="display: none;" class="max-w-xs mx-auto mt-8 rounded shadow-md">
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
