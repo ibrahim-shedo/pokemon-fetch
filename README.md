@@ -1,24 +1,33 @@
-Fetch Pokemon Data - README
-Description
-This JavaScript code defines an asynchronous function fetchData that fetches data about a Pokémon from the PokeAPI based on user input, and displays the Pokémon's sprite on a webpage.
+# Fetch Pokemon Data - README
 
-Functionality
-Input Handling: The function retrieves the Pokémon name entered by the user in an input field.
-API Call: It makes an asynchronous request to the PokeAPI to fetch data for the specified Pokémon.
-Error Handling: If the API request fails, an error is caught and logged to the console.
-Display: On a successful fetch, the Pokémon's sprite is displayed on the webpage.
-Requirements
-A modern web browser that supports JavaScript and ES6 features (such as async/await).
-Internet connection to access the PokeAPI.
-Installation and Setup
-HTML Structure: Ensure your HTML file contains the necessary elements:
+## Description
+This JavaScript code defines an asynchronous function `fetchData` that fetches data about a Pokémon from the PokeAPI based on user input and displays the Pokémon's sprite on a webpage.
 
-html
-Copy code
+## Functionality
+- **Input Handling**: The function retrieves the Pokémon name entered by the user in an input field.
+- **API Call**: It makes an asynchronous request to the PokeAPI to fetch data for the specified Pokémon.
+- **Error Handling**: If the API request fails, an error is caught and logged to the console.
+- **Display**: On a successful fetch, the Pokémon's sprite is displayed on the webpage.
+
+---
+
+## Requirements
+- A modern web browser that supports JavaScript and ES6 features (such as `async/await`).
+- Internet connection to access the PokeAPI.
+
+---
+
+## Installation and Setup
+
+### 1. HTML Structure
+Ensure your HTML file contains the necessary elements:
+
+```html
 <input type="text" id="pokemonNames" placeholder="Enter Pokémon name">
 <button onclick="fetchData()">Fetch Pokémon</button>
 <img id="pokemonSprite" style="display:none;" alt="Pokémon Sprite">
-JavaScript: Include the fetchData function in a script tag or a separate JavaScript file:
+2. JavaScript
+Include the fetchData function in a script tag or a separate JavaScript file:
 
 html
 Copy code
@@ -40,7 +49,8 @@ Copy code
         }
     }
 </script>
-Styling: Optionally, add CSS to style the input, button, and image elements as desired.
+3. Styling
+Optionally, add CSS to style the input, button, and image elements as desired.
 
 Usage
 Open the HTML file in a web browser.
@@ -89,9 +99,4 @@ Copy code
 </body>
 </html>
 This example demonstrates how to set up and use the fetchData function within an HTML document. Simply copy and paste the provided HTML and JavaScript code into your project to get started.
-
-
-
-
-
 
